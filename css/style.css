@@ -1,42 +1,62 @@
 body{
     margin: 0;
-    font-family: 'Finger Paint', sans-serif;
-    background-color: #c27ba0;
-    color: #000000;
+    font-family: 'Playfair Display', sans-serif;
+    background-color: rgb(238, 214, 237);
 }
 
 header{
     text-align: center;
-    font-size: 3em;
-    background-color: #ffffff;
-    font-family: backstreet, sans-serif;
-    margin: 20px 10px 0px 10px white;
+    font-size: 4em;
+    font-family: 'Marck Script', sans-serif;
+    margin-top: 8%;
+    margin-bottom: -3px;
 }
+
+header {
+    animation-name: headerguy;
+    animation-duration: 4s;
+}
+
+@keyframes headerguy {
+    0% { opacity: 0; transform: translateX(-500px);}
+    100% { opacity: 1; transform: translateX(0);}
+} 
 
 nav{
     background-color: #ffffff;
-    color: #c27ba0;
-    font-family: backstreet, sans-serif;
 }
 
 .nav_links{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Marck Script', sans-serif;
+    font-size: 1.2em;
+} 
+
+.nav_item{
+    border-radius: 50%;
+}
+.nav_item a:visited{
+    color: #000000; 
 }
 
-li.active{
-    background-color: #c27ba0;
+nav .nav_item:active{
+    background-color: rgb(238, 214, 237);
 }
+
+/* a{
+    text-decoration: none;
+} */
 
 h1{
     text-align: center;
-    margin-top: 10px;
+    font-family: 'Marck Script', sans-serif;
+    font-size: 1.5em;
+    margin-top: 3%;
 }
 
-.nav_item a:visited{
-    color: #ffffff; 
-}
 
 a.skip{
     left: 0;
@@ -53,21 +73,36 @@ a.skip:focus{
     top: 20px;
     color: black;
     text-decoration-style: solid;
-  }
+}
 
-#homep{
+#selfport{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+p{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5%;
+}
+
+/* p{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    font-size: 14px;
+} */
+
+h1{
     text-align: center;
 }
 
 #me{
-    width: 80%;
-    border: 20px solid #ffffff;
-    left: 50px;
-
-}
-
-h1{
-    text-align: center;
+    margin-left: 30%;
+    margin-top: 5%;
+    width: 40%;
 }
 
 .grid-container{
@@ -77,23 +112,29 @@ h1{
     row-gap: 20px;
 }
 
-#frida{
+#image5, #image6{
     width: 50%;
+    grid-template-columns: 1fr 1fr;
+
 }
 
 footer{
-    background-color: #000000;
+    background-color: #ffffff;
     width: 100%;
-    height: 50px;
+    height: 25px;
     bottom: 0;
 }
 
 footer p{ 
     color: #ffffff;
-    font-family: sans-serif;
+    font-family: 'Playfair Display', sans-serif;
     text-align: center;
     margin: auto 0;
+    color: #000000;
+    font-size: 10px;
 }
+
+
 
 @media only screen and (min-width: 768px) {
 
@@ -106,8 +147,13 @@ footer p{
       margin-top: 15px;
   } 
 
+
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
-    
 
 
 
