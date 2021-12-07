@@ -16,25 +16,52 @@
     <a class = "skip" href="#skip">Skip to Main Content</a>
     <nav>
         <ul class="nav_links">
-          <li class="nav_item"><a href = index.html>Home</a></li>
-          <li class = "nav_item"><a href = about.html>About</a></li>
-          <li class="nav_item"><a href = portraits.html>Portraits</a></li>
-          <li class="nav_item"><a href = sketches.html>Sketches</a></li>
-          <li class="nav_item"><a href = artists.html>Contact</a></li>
+          <li><a href = index.html>Home</a></li>
+          <li><a href = about.html>About</a></li>
+          <li><a href = portraits.html>Portraits</a></li>
+          <li><a href = sketches.html>Sketches</a></li>
+          <li class="current"><a href = artists.html>Contact</a></li>
 
         </ul>
     </nav>
   </header>
-    <h1>Contact</h1>
-    <h2>You can contact me if you’re interested in commissions, an origial artwork, inquiries or just to say hi.</h2>
-    <section class="name">
-      <label for="Name">First Name</label>
-      <input type="text" name="first" id="first">
+    
+    
+    <section id="overlay"></section>
+      <h1 id="skip">Contact</h1>
+      <div id="parallax"></div>
 
-      <label for="Name">Last Name</label>
-      <input type="text" name="last" id="last">
+      <h2>You can contact me if you’re interested in commissions, an origial artwork, inquiries or just to say hi.</h2>
+        <form action="/form.html" method="POST">
+        <label for="name" aria-required = "true">Name * </label>
+        <br>
+        <input type="text" name="first-name" id="name">
+        <br> <br>
+        <label for="email" aria-required="true">Email Address * </label>
+        <br>
+        <input type="text" name="email" autocomplete="email" id="email">
+        <br><br>
+        <label for="subject" aria-required="true">Subject * </label>
+          <select id="subject" name="subject">
+            <option value="start"></option>
+            <option value="Commission">Commission</option>
+            <option value="Original Artwork">Original Artwork</option>
+            <option value="Inquiry">Inquiry</option>
+            <option value="Anything else">Anything else</option>
+          </select>
+        <br><br>
+        <label for="message" aria-required="true">Message * </label>
+        <br>
+        <textarea class="message" id="message" aria-required="true"></textarea>
+        <br><br><br>
+        <input class="submit" type="submit" value="submit">
+
+      </form>
+    
     </section>
-    <hr>
+
+
+
 </body>
 <footer> <p> University of Michigan School of Information<br>&copy Andrea Rose Holber - SI 339</p></footer>
 </html>
