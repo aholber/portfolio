@@ -8,12 +8,26 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <i class="fas fa-font"></i>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MCSEE6V2EH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'G-MCSEE6V2EH');
+    </script>
+
     <title>Andrea Holber</title>
 </head>
 <body>
-    <header>Dre Dre Draws</header>
-    
-    <a class = "skip" href="#skip">Skip to Main Content</a>
+  <a class = "skip" href="#skip">Skip to Main Content</a>
+    <header>
+      <h1>Dre Dre Draws</h1>
     <nav>
         <ul class="nav_links">
           <li><a href = index.html>Home</a></li>
@@ -21,18 +35,17 @@
           <li><a href = portraits.html>Portraits</a></li>
           <li><a href = sketches.html>Sketches</a></li>
           <li class="current"><a href = artists.html>Contact</a></li>
-
         </ul>
     </nav>
   </header>
     
-    
+  <div id="parallax"></div>
     <section id="overlay"></section>
-      <h1 id="skip">Contact</h1>
-      <div id="parallax"></div>
+      <h2 id="skip">Contact</h2>
+      
 
-      <h2>You can contact me if you’re interested in commissions, an origial artwork, inquiries or just to say hi.</h2>
-        <form action="/form.html" method="POST">
+      <h3>You can contact me if you’re interested in commissions, an origial artwork, inquiries or just to say hi.</h3>
+        <form action="https://formspree.io/f/myyoyzkb" method="POST">
         <label for="name" aria-required = "true">Name * </label>
         <br>
         <input type="text" name="first-name" id="name">
