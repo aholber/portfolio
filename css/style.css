@@ -155,7 +155,6 @@ p{
 }
 
 .content{
-    /* position: relative; */
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -208,8 +207,8 @@ textarea{
 
 .submit{
     font-family: 'Playfair Display', sans-serif;
-    width: 20%;
-    margin-left: 40%;
+    width: 30%;
+    margin-left: 35%;
     margin-bottom: 40px;
 }
 
@@ -308,10 +307,6 @@ footer p{
 
   }
 
-  /* #image8{
-      grid-column: 2;
-  } */
-
   .grid-container div img{
     width: 59%;
   }
@@ -322,7 +317,6 @@ footer p{
 @media only screen and (min-width: 1000px) {
     header{
         flex-direction: column;
-
     }
 
     p{
